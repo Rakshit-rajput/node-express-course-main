@@ -1,0 +1,16 @@
+{
+  "name": "express-course-main",
+  "version": "1.0.0",
+  "description": "#### Node Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "git": "^0.1.5",
+    "lodash": "^4.17.21"
+  }
+}
