@@ -41,10 +41,14 @@ const updateTask = async (req,res)=>{
             new:true,runValidators:true,
         })
         if(!task){
-            return res.status(404).json({msg:`No task with id:${taskID}`})
+            return res.status(404).json({ msg: `No task with id: ${taskID}` });
         }
+         // Task updated successfully, send a success response
+         return res.status(200).json({ msg: 'Task updated successfully', task });
     } catch (error) {
-        
+         // Handle errors appropriately
+         console.error('Error updating task:', error);
+         return res.status(500).json({ msg: 'An error occurred while updating the task' });
     }
 
 }
