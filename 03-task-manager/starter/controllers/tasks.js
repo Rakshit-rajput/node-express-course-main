@@ -14,7 +14,7 @@ const createTask = async(req,res)=>{
         const task = await Task.create(req.body)
         res.status(201).json({task})
     } catch (error) {
-        res.status(500).json({msg:error})
+        res.status(500).json({msg:`something went wrong please try again`})
     }
 
 }
